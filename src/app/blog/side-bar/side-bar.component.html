@@ -1,0 +1,9 @@
+<div class="list-group mt-2">
+  <button class="list-group-item list-group-item-action"
+          *ngFor="let category of getCategories()"
+          (click)="changeCategory(category)"
+          [class.active]="category == selectedCategory"
+  >
+    {{category.name}}
+  </button>
+</div>
